@@ -15,7 +15,7 @@
 
 ## Usage
 
-1. Clone this repository: `git clone https://github.com/your-username/speedy-gau.git`
+1. Clone this repository: `git clone https://github.com/t4ps3c/speedy-gau.git`
 2. Navigate to the cloned directory: `cd speedy-gau`
 3. Run the script and specify the target URL: `python3 speedy-gau.py -u www.example.com`
 - This will extract all the URLs from the website and save them to a file named `urls_yyyy-mm-dd-hh-mm-ss.txt` in the current directory.
