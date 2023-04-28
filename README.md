@@ -6,11 +6,11 @@
 
 - Python 3.x
 - `requests` module (`pip install requests`)
-- `selenium` module (`pip install selenium`)
 - `os` module (`pip install os`)
 - `re` module (`pip install re`)
 - `argparse` module (`pip install argparse`)
 - `json` module (`pip install json`)
+- `datetime` module (`pip install datetime`)
 
 
 ## Usage
