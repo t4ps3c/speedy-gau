@@ -15,7 +15,7 @@ print("")
 
 parser = argparse.ArgumentParser(description='Help options')
 parser.add_argument('-u', '--url', type=str, help='URL to fetch')
-parser.add_argument('-o', '--output', type=str, default=f"urls2_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt", help='output file path')
+parser.add_argument('-o', '--output', type=str, default=f"urls_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt", help='output file path')
 
 args = parser.parse_args()
 output_file = args.output
