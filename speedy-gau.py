@@ -18,7 +18,8 @@ parser.add_argument('-u', '--url', type=str, help='URL to fetch')
 parser.add_argument('-o', '--output', type=str, default=f"{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt", help='output file path')
 
 args = parser.parse_args()
-output_file = args.url +"-"+ args.output
+url_without_prefix = args.url.replace('https://', '').replace('*.', '').replace('http://', '')
+output_file = url_without_prefix  +"-"+ args.output
 url = f"https://web.archive.org/cdx/search/cdx?url={args.url}/*&output=text&fl=original&collapse=urlkey"
 response1 = requests.get(url)
 
