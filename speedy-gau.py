@@ -15,10 +15,10 @@ print("")
 
 parser = argparse.ArgumentParser(description='Help options')
 parser.add_argument('-u', '--url', type=str, help='URL to fetch')
-parser.add_argument('-o', '--output', type=str, default=f"urls_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt", help='output file path')
+parser.add_argument('-o', '--output', type=str, default=f"{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt", help='output file path')
 
 args = parser.parse_args()
-output_file = args.output
+output_file = args.url +"-"+ args.output
 url = f"https://web.archive.org/cdx/search/cdx?url={args.url}/*&output=text&fl=original&collapse=urlkey"
 response1 = requests.get(url)
 
@@ -54,4 +54,4 @@ with open(output_file, 'a') as f:
 
 os.remove('urls.json')
 
-print("All URLs saved to", args.output)
+print("All URLs saved to", output_file)
