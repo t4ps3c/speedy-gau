@@ -9,9 +9,9 @@ print("\033[94m  ____  ____  ____  ____  ____  _  _       ___   __   _  _   \033
 print("\033[94m / ___)(  _ \(  __)(  __)(    \( \/ )___  / __) / _\ / )( \  \033[0m")
 print("\033[94m \___ \ ) __/ ) _)  ) _)  ) D ( )  /(___)( (_ \/    \) \/ (  \033[0m")
 print("\033[94m (____/(__)  (____)(____)(____/(__/       \___/\_/\_/\____/  \033[0m")
-print("")
+print(" ")
 print("                     \033[91mCreated by: t4ps3c\033[0m")
-print("")
+print(" ")
 
 parser = argparse.ArgumentParser(description='Help options')
 parser.add_argument('-u', '--url', type=str, help='URL to fetch')
